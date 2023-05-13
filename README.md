@@ -14,7 +14,7 @@ I've managed to output the data I want from yt-dlp as both csv files and as json
 * Find some youtube channel, say `https://www.youtube.com/@MickWest/videos`
 * Create folder `MickWest` to store `*.json` and `*.srt`
 * `cd MickWest`
-* `yt-dlp --write-auto-sub --sub-langs en --write-subs --convert-subs srt --skip-download https://www.youtube.com/@MickWest/videos`
+* `yt-dlp --write-info-json --write-auto-sub --sub-langs en --write-subs --convert-subs srt --skip-download https://www.youtube.com/@MickWest/videos`
 * `cd ..`
 * `python json2xlsx.py MickWest`
 * Find two generated files, `MickWest/Mick West - Videos.cvs`  and `MickWest/Mick West - Videos.xlsx`
