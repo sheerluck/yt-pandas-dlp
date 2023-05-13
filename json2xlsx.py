@@ -31,7 +31,7 @@ def to_date(s):
 
 
 def to_dict(fn):
-    with open(fn, "r") as f:
+    with open(fn, "r", encoding="utf-8") as f:
         data = json.load(f)
     return data
 
