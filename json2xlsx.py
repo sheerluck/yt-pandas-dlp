@@ -67,7 +67,7 @@ def process(initial, win, path):
     df = pd.DataFrame(for_pandas)
     df.to_excel(to_name(path, pref), index=False, header=True)
     df.to_csv(
-        to_name(path, pref, "cvs"),
+        to_name(path, pref, "csv"),
         index=False,
         header=True,
         lineterminator="\r\n" if win else "\n",
